@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ballet Enrollment</title>
+</head>
+<body>
+  <header>
+    <h1>Ballet Enrollment</h1>
+    <p>Please fill out the form below to enroll in the ballet school.</p>
+  </header>
+
+  <main>
+    <!-- Lists -->
+    <section>
+      <h2>What Is Needed to Be a Ballerina</h2>
+      <ol>
+        <li>Regular training and practice</li>
+        <li>Good physical fitness and flexibility</li>
+        <li>Dedication and passion for dance</li>
+        <li>Proper ballet technique</li>
+        <li>Healthy nutrition and self-care</li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Benefits of Being a Ballerina</h2>
+      <ul>
+        <li>Improved strength and flexibility</li>
+        <li>Development of discipline and focus</li>
+        <li>Artistic expression and creativity</li>
+        <li>Opportunities for performances and travel</li>
+        <li>Sense of personal achievement</li>
+      </ul>
+    </section>
+
+    <hr />
+<table border="1">
+  <caption>Ballet Styles Overview</caption>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Description</th>
+      <th>Difficulty Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Classical Ballet</td>
+      <td>Traditional form focusing on strict technique and formality.</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Contemporary Ballet</td>
+      <td>Combines classical ballet and modern dance with freer movements.</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Jazz Ballet</td>
+      <td>Expressive style mixing ballet technique with jazz dance elements.</td>
+      <td>Medium</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <hr />
+
+    <!-- Media -->
+    <section>
+      <h2>Media</h2>
+
+      <h3>Ballerina Photo</h3>
+      <img
+        src="https://images.pexels.com/photos/13411721/pexels-photo-13411721.jpeg"
+        alt="Woman dancing in skirt"
+        width="400"
+      />
+
+      <h3>Ballet Music Audio</h3>
+      <audio controls>
+        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Ballerina Video</h3>
+      <video controls width="600" height="338">
+        <source src="https://videos.pexels.com/video-files/8462510/8462510-uhd_1440_2732_25fps.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <hr />
+
+    <!-- Form -->
+    <section>
+      <h2>Enrollment Form</h2>
+      <form action="#" method="post" autocomplete="on" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name: <sup>*</sup></label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3" />
+
+          <label for="email">Email: <sup>*</sup></label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" pattern="\(\d{3}\) \d{3}-\d{4}" />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" autocomplete="sex">
+            <option value="" selected disabled>Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Login Information</legend>
+
+          <label for="username">Username: <sup>*</sup></label>
+          <input type="text" id="username" name="username" required minlength="5" maxlength="15" pattern="[A-Za-z0-9_-]+" placeholder="No spaces" autocomplete="username" />
+
+          <label for="password">Password: <sup>*</sup></label>
+          <input type="password" id="password" name="password" required minlength="8" placeholder="Minimum 8 characters" autocomplete="new-password" />
+
+          <label for="confirm_password">Confirm Password: <sup>*</sup></label>
+          <input type="password" id="confirm_password" name="confirm_password" required minlength="8" placeholder="Repeat password" autocomplete="new-password" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Comments</legend>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Leave your message here..." maxlength="500"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <label>
+            <input type="checkbox" name="newsletter" checked />
+            I want to receive news by email
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit Enrollment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Ballet School by Marlene Paulino</p>
+  </footer>
+</body>
+</html>
